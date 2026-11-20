@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#4e2a84">
+  <meta name="description" content="Explore survey findings on reporting conditions, access, newsroom support, and the local effects of federal policy.">
+  <title>Reporting Under Pressure | Survey Dashboard</title>
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="survey-data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to results</a>
+  <header>
+    <div class="mast shell">
+      <span class="wordmark">REPORTING UNDER PRESSURE</span>
+      <span class="edition">NOVEMBER 2026 <span> / </span> SURVEY RESULTS</span>
+    </div>
+    <div class="banner">
+      <div class="shell banner-grid">
+        <div>
+          <p class="eyebrow">State of the craft</p>
+          <h1>From Washington to City Hall</h1>
+          <p class="intro">How journalists cover the local effects of federal policy, navigate barriers to reporting, and decide what support they need.</p>
+        </div>
+        <div class="snapshot">
+          <span>DATA SNAPSHOT</span>
+          <strong>Nov. 2–20, 2026</strong>
+          <span>421 eligible respondents · Full and partial</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="navigation">
+    <nav class="shell tabs" aria-label="Survey sections">
+      <button data-view="overview" aria-current="page">Overview</button>
+      <button data-view="policy">Federal effects</button>
+      <button data-view="pressure">Reporting pressures</button>
+      <button data-view="editorial">Editorial choices</button>
+      <button data-view="support">Newsroom support</button>
+      <button data-view="methods">Methods</button>
+    </nav>
+  </div>
+  <main id="content" class="shell" tabindex="-1">
+    <div class="controls" id="controls">
+      <div class="filter">
+        <label for="cohort">Respondent group</label>
+        <select id="cohort"><option value="all">All respondents</option></select>
+      </div>
+      <label class="compare"><input id="compare" type="checkbox" checked disabled> Compare with all</label>
+      <div class="mode" role="group" aria-label="Data display">
+        <button id="bars" aria-pressed="true">Charts</button>
+        <button id="tables" aria-pressed="false">Tables</button>
+      </div>
+    </div>
+    <div class="sr" id="status" aria-live="polite"></div>
+    <div id="results"><p>Loading survey results…</p></div>
+  </main>
+  <footer class="shell footer">
+    <span>Reporting Under Pressure · November 20, 2026 Qualtrics export</span>
+    <span>Descriptive results · Not an industry-wide estimate</span>
+  </footer>
+</body>
+</html>
